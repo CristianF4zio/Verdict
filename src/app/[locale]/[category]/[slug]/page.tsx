@@ -234,14 +234,8 @@ async function ReviewTemplate({ doc, url }: { doc: ContentDoc; url: string }) {
             </div>
           )}
 
-          <div className="prose max-w-[62ch] text-[18px] leading-[1.65] text-ink prose-headings:font-medium prose-headings:tracking-[-0.04em] prose-headings:text-ink prose-p:text-body prose-a:text-ink prose-a:underline prose-strong:text-ink prose-li:text-body">
+          <div className="prose mb-12 max-w-[62ch] text-[18px] leading-[1.65] text-ink prose-headings:font-medium prose-headings:tracking-[-0.04em] prose-headings:text-ink prose-p:text-body prose-a:text-ink prose-a:underline prose-strong:text-ink prose-li:text-body">
             <MdxContent code={doc.body} />
-          </div>
-
-          <div className="my-12 max-w-[26ch] border-l-2 border-signal pl-7">
-            <p className="m-0 font-serif text-[30px] italic leading-[1.2] md:text-[34px]">
-              {doc.description}
-            </p>
           </div>
 
           {doc.faqs.length > 0 && (
