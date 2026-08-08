@@ -59,19 +59,33 @@ export default async function HomePage({
         >
           {t("titleLead")} <span className="text-signal">{t("titleHighlight")}</span>
         </h1>
-        <p
-          className="animate-fade-up mt-9 max-w-[44ch] text-lg leading-relaxed text-body"
+        <div
+          className="animate-fade-up mt-9 flex flex-wrap items-end justify-between gap-12"
           style={{ animationDelay: "80ms" }}
         >
-          {t("subtitle")}
-        </p>
-        <a
-          href="#scores"
-          aria-label={t("cta")}
-          className="bounce-arrow mt-14 flex justify-center text-6xl leading-none text-signal transition-colors duration-200 hover:text-panel-ink md:text-7xl"
-        >
-          ↓
-        </a>
+          <p className="max-w-[44ch] text-lg leading-relaxed text-body">
+            {t("subtitle")}
+          </p>
+          <a
+            href="#scores"
+            aria-label={t("cta")}
+            className="bounce-arrow shrink-0 text-signal transition-colors duration-200 hover:text-panel-ink"
+          >
+            <svg
+              width="64"
+              height="88"
+              viewBox="0 0 24 32"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="4"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <line x1="12" y1="1" x2="12" y2="25" />
+              <polyline points="2,16 12,29 22,16" />
+            </svg>
+          </a>
+        </div>
       </section>
 
       <section id="scores" className="scroll-mt-6 bg-panel text-panel-ink">
