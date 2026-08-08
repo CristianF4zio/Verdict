@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { routing, type Locale } from "@/i18n/routing";
 import { Link } from "@/i18n/navigation";
-import { getUniqueProductCount, getAllContent } from "@/lib/content";
+import { getTestedProductCount, getPublishedArticleCount } from "@/lib/content";
 import { AuthorBio } from "@/components/ui/AuthorBio";
 
 export function generateStaticParams() {
@@ -45,8 +45,8 @@ export default async function AboutPage({
   setRequestLocale(locale);
   const t = await getTranslations("about");
 
-  const toolsCount = getUniqueProductCount(locale);
-  const articlesCount = getAllContent(locale).length;
+  const toolsCount = getTestedProductCount(locale);
+  const articlesCount = getPublishedArticleCount(locale);
 
   const stats = [
     { value: String(toolsCount), label: t("statTools") },

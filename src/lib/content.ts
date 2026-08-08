@@ -60,6 +60,25 @@ export function getUniqueProductCount(locale: Locale) {
   return names.size;
 }
 
+// Only products that have actually been tested (rating > 0) — scaffold
+// products default to 0 until real content replaces the placeholder.
+export function getTestedProductCount(locale: Locale) {
+  const names = new Set(
+    getAllContent(locale).flatMap((doc) =>
+      doc.products.filter((p) => p.rating > 0).map((p) => p.name.toLowerCase()),
+    ),
+  );
+  return names.size;
+}
+
+// An article counts as published only once every product it covers has
+// been tested — a scaffold page with rating: 0 placeholders isn't done yet.
+export function getPublishedArticleCount(locale: Locale) {
+  return getAllContent(locale).filter(
+    (doc) => doc.products.length > 0 && doc.products.every((p) => p.rating > 0),
+  ).length;
+}
+
 export function getLatestUpdate(locale: Locale, category?: string) {
   const docs = category
     ? getContentByCategory(locale, category)
