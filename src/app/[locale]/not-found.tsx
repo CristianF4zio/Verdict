@@ -17,7 +17,7 @@ export default async function NotFound() {
       </p>
       <Link
         href="/"
-        className="inline-block rounded-md border border-panel-line bg-panel px-5 py-3.5 text-sm font-medium text-panel-ink transition-all duration-200 hover:-translate-y-1 hover:border-signal hover:bg-signal hover:text-on-signal"
+        className="inline-block rounded-full border border-panel-line bg-panel px-5 py-3.5 text-sm font-medium text-panel-ink transition-all duration-200 hover:-translate-y-1 hover:border-signal hover:bg-signal hover:text-on-signal"
       >
         {t("cta")}
       </Link>
