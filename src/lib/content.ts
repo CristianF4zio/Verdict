@@ -112,6 +112,7 @@ export function getTopProducts(locale: Locale, limit: number): TopProduct[] {
   }
 
   return Array.from(byName.values())
+    .filter((p) => p.rating > 0)
     .sort((a, b) => b.rating - a.rating)
     .slice(0, limit);
 }
