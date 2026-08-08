@@ -1,0 +1,115 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "emailMarketing": "Email Marketing",
+    "coursePlatforms": "Plataformas de Cursos",
+    "automationTools": "Automatización",
+    "businessSecurity": "Seguridad Empresarial"
+  },
+  "footer": {
+    "backToTop": "Volver arriba",
+    "categories": "Categorías",
+    "editorial": "Editorial",
+    "methodology": "Metodología",
+    "howWeFund": "Cómo nos financiamos",
+    "team": "Equipo",
+    "legal": "Legal",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "affiliate": "Divulgación de afiliados",
+    "language": "Idioma",
+    "copyright": "© {year} {siteName}. Todos los derechos reservados."
+  },
+  "home": {
+    "titleLead": "Una metodología.",
+    "titleHighlight": "Un puntaje verificable.",
+    "subtitle": "Evaluamos cada herramienta con cuenta propia, durante semanas de uso real, antes de asignar un puntaje sobre 10.",
+    "cta": "Ver puntuaciones →",
+    "rankingLabel": "Mejor puntuados",
+    "teaserVersus": "Versus",
+    "teaserRoundup": "Roundup",
+    "teaserReview": "Review",
+    "quote": "El puntaje se publica antes de cualquier conversación comercial con la marca.",
+    "quoteLink": "Ver metodología completa →"
+  },
+  "category": {
+    "kicker": "Categoría · {count} herramientas",
+    "filterAll": "Todas {count}",
+    "filterReviews": "Reviews {count}",
+    "filterVersus": "Versus {count}",
+    "filterRoundups": "Guías {count}",
+    "empty": "Todavía no hay contenido publicado."
+  },
+  "categoryMeta": {
+    "email-marketing": {
+      "short": "Newsletters, secuencias y automatización de correo.",
+      "long": "Herramientas para construir y automatizar tu lista de correo, sin depender de una agencia."
+    },
+    "course-platforms": {
+      "short": "Plataformas para vender cursos y comunidades.",
+      "long": "Plataformas todo en uno para vender cursos, membresías y comunidades online."
+    },
+    "automation-tools": {
+      "short": "Conectar apps y flujos sin código.",
+      "long": "Herramientas para conectar apps y automatizar flujos de trabajo sin depender de un equipo de ingeniería."
+    },
+    "business-security": {
+      "short": "VPN y herramientas de seguridad para equipos chicos.",
+      "long": "VPN y herramientas de ciberseguridad pensadas para equipos pequeños, no para departamentos de TI."
+    }
+  },
+  "content": {
+    "editorsChoice": "Elección VERDICT",
+    "pros": "A favor",
+    "cons": "En contra",
+    "ctaTryFree": "Probar gratis",
+    "ctaTryFreeDays": "Probar 14 días gratis",
+    "ctaTrial14": "Prueba de 14 días",
+    "ctaSeePricing": "Ver precios",
+    "ctaSeePlans": "Ver planes",
+    "disclosure": "Enlace de afiliado · {price}",
+    "faqTitle": "Dudas frecuentes",
+    "alternatives": "Alternativas",
+    "verdict": "Veredicto",
+    "whoTested": "Quién lo probó",
+    "howWeTested": "Cómo probamos"
+  },
+  "comparison": {
+    "winner": "Ganador",
+    "alternative": "Alternativa {n}",
+    "chooseIf": "Elige {name} si"
+  },
+  "about": {
+    "kicker": "Quiénes somos",
+    "titleLead": "Pagamos el software",
+    "titleHighlight": "del que hablamos.",
+    "subtitle": "Ninguna marca paga por aparecer, por su posición ni por leer un texto antes de publicarse.",
+    "statTools": "herramientas probadas",
+    "statArticles": "artículos publicados",
+    "statDays": "30+",
+    "statDaysLabel": "días mínimos por reseña",
+    "statSponsored": "reviews patrocinadas",
+    "step1Title": "Compra",
+    "step1Desc": "Pagamos el plan que usaría un cliente real. Nunca cuentas de prensa.",
+    "step2Title": "Producción",
+    "step2Desc": "Cuatro semanas mínimo con trabajo real, no un recorrido por la demo.",
+    "step3Title": "Revisión",
+    "step3Desc": "Un segundo editor reproduce las pruebas antes de publicar la puntuación.",
+    "quote": "Las comisiones se negocian después de publicar la review. Nunca antes.",
+    "quoteBody": "Algunos enlaces son de afiliado: si contratas a través de ellos recibimos una comisión sin coste para ti. No cambian el orden ni la puntuación, y cuando una marca no tiene programa el enlace sigue estando.",
+    "policyLink": "Política editorial",
+    "team": "Quién escribe"
+  },
+  "notFound": {
+    "kicker": "404",
+    "title": "Esa página no existe.",
+    "subtitle": "El enlace puede estar roto o el contenido se movió. Vuelve al inicio o elige una categoría.",
+    "cta": "Volver al inicio →"
+  },
+  "cookieConsent": {
+    "message": "Usamos cookies de analítica para entender cómo los visitantes usan este sitio. Puedes aceptar o rechazar.",
+    "privacyLink": "Política de Privacidad",
+    "accept": "Aceptar",
+    "reject": "Rechazar"
+  }
+}

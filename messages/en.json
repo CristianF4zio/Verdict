@@ -1,0 +1,115 @@
+{
+  "nav": {
+    "home": "Home",
+    "emailMarketing": "Email Marketing",
+    "coursePlatforms": "Course Platforms",
+    "automationTools": "Automation Tools",
+    "businessSecurity": "Business Security"
+  },
+  "footer": {
+    "backToTop": "Back to top",
+    "categories": "Categories",
+    "editorial": "Editorial",
+    "methodology": "Methodology",
+    "howWeFund": "How we fund this",
+    "team": "Team",
+    "legal": "Legal",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "affiliate": "Affiliate disclosure",
+    "language": "Language",
+    "copyright": "© {year} {siteName}. All rights reserved."
+  },
+  "home": {
+    "titleLead": "One methodology.",
+    "titleHighlight": "One verifiable score.",
+    "subtitle": "We evaluate every tool on our own account, over weeks of real use, before assigning a score out of 10.",
+    "cta": "See scores →",
+    "rankingLabel": "Top rated",
+    "teaserVersus": "Versus",
+    "teaserRoundup": "Roundup",
+    "teaserReview": "Review",
+    "quote": "The score gets published before any commercial conversation with the brand.",
+    "quoteLink": "See the full methodology →"
+  },
+  "category": {
+    "kicker": "Category · {count} tools",
+    "filterAll": "All {count}",
+    "filterReviews": "Reviews {count}",
+    "filterVersus": "Versus {count}",
+    "filterRoundups": "Guides {count}",
+    "empty": "No content published yet."
+  },
+  "categoryMeta": {
+    "email-marketing": {
+      "short": "Newsletters, sequences, and email automation.",
+      "long": "Tools for building and automating your email list, without hiring an agency."
+    },
+    "course-platforms": {
+      "short": "Platforms for selling courses and communities.",
+      "long": "All-in-one platforms for selling courses, memberships, and online communities."
+    },
+    "automation-tools": {
+      "short": "Connect apps and automate workflows without code.",
+      "long": "Tools for connecting apps and automating workflows without an engineering team."
+    },
+    "business-security": {
+      "short": "VPN and security tools for small teams.",
+      "long": "VPN and cybersecurity tools built for small teams, not enterprise IT departments."
+    }
+  },
+  "content": {
+    "editorsChoice": "Verdict pick",
+    "pros": "For",
+    "cons": "Against",
+    "ctaTryFree": "Try free",
+    "ctaTryFreeDays": "Try free for 14 days",
+    "ctaTrial14": "14-day trial",
+    "ctaSeePricing": "See pricing",
+    "ctaSeePlans": "See plans",
+    "disclosure": "Affiliate link · {price}",
+    "faqTitle": "Frequently asked questions",
+    "alternatives": "Alternatives",
+    "verdict": "Verdict",
+    "whoTested": "Who tested it",
+    "howWeTested": "How we tested"
+  },
+  "comparison": {
+    "winner": "Winner",
+    "alternative": "Alternative {n}",
+    "chooseIf": "Choose {name} if"
+  },
+  "about": {
+    "kicker": "Who we are",
+    "titleLead": "We pay for the software",
+    "titleHighlight": "we talk about.",
+    "subtitle": "No brand pays to appear, for its ranking, or to read a piece before it's published.",
+    "statTools": "tools tested",
+    "statArticles": "articles published",
+    "statDays": "30+",
+    "statDaysLabel": "minimum days per review",
+    "statSponsored": "sponsored reviews",
+    "step1Title": "Purchase",
+    "step1Desc": "We pay for the plan a real customer would use. Never press accounts.",
+    "step2Title": "Production",
+    "step2Desc": "Four weeks minimum of real work, not a demo walkthrough.",
+    "step3Title": "Review",
+    "step3Desc": "A second editor reproduces the tests before the score is published.",
+    "quote": "Commissions get negotiated after the review is published. Never before.",
+    "quoteBody": "Some links are affiliate links: if you sign up through them we get a commission at no cost to you. They never change the ranking or the score, and when a brand has no program, the link stays anyway.",
+    "policyLink": "Editorial policy",
+    "team": "Who writes"
+  },
+  "notFound": {
+    "kicker": "404",
+    "title": "That page doesn't exist.",
+    "subtitle": "The link might be broken, or the content moved. Head back home or pick a category.",
+    "cta": "Back to home →"
+  },
+  "cookieConsent": {
+    "message": "We use analytics cookies to understand how visitors use this site. You can accept or decline.",
+    "privacyLink": "Privacy Policy",
+    "accept": "Accept",
+    "reject": "Reject"
+  }
+}
