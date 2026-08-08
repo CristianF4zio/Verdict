@@ -121,16 +121,16 @@ details[open] .faq-bar {
    Needs a `perspective` ancestor (see the teaser grid) to read as 3D. */
 .tilt-3d {
   transform-style: preserve-3d;
-  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.5s;
 }
 .tilt-3d:hover {
-  transform: translateZ(18px) rotateX(22deg) rotateY(22deg);
+  transform: translateZ(10px) rotateX(20deg) rotateY(20deg);
 }
 .tilt-3d-pop {
-  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.5s;
 }
 .tilt-3d:hover .tilt-3d-pop {
-  transform: translateZ(65px);
+  transform: translateZ(50px);
 }
 
 @media (prefers-reduced-motion: reduce) {

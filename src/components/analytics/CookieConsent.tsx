@@ -30,6 +30,21 @@ function setConsent(value: Consent) {
   listeners.forEach((listener) => listener());
 }
 
+function subscribeOnce() {
+  return () => {};
+}
+
+// Reads as false during SSR and the first client render, then true from the
+// next render on — lets us hold off rendering the banner until we know the
+// real localStorage value, instead of flashing it for returning visitors.
+function useMounted(): boolean {
+  return useSyncExternalStore(
+    subscribeOnce,
+    () => true,
+    () => false,
+  );
+}
+
 const hasAnalytics = Boolean(
   process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ||
     process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID,
@@ -42,6 +57,7 @@ export function CookieConsent() {
     getSnapshot,
     getServerSnapshot,
   );
+  const mounted = useMounted();
 
   if (!hasAnalytics) return null;
 
@@ -54,8 +70,8 @@ export function CookieConsent() {
         </>
       )}
 
-      {consent === null && (
-        <div className="fixed inset-x-0 bottom-0 z-50 border-t border-ink bg-paper/95 px-4 py-4 backdrop-blur">
+      {mounted && consent === null && (
+        <div className="fixed inset-x-0 bottom-0 z-50 border-t border-panel-line bg-paper/95 px-4 py-4 backdrop-blur">
           <div className="mx-auto flex max-w-[1280px] flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <p className="text-sm text-body">
               {t("message")}{" "}
