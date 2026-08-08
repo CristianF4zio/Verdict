@@ -10,31 +10,17 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-// Example editorial identities, shared with the demo content — swap for the
-// site's real team before publishing.
 const team = {
   en: [
     {
-      name: "Marina Ibáñez",
-      credentials:
-        "8 years evaluating software for creators · former growth lead at 2 SaaS startups. Covers email and automation.",
-    },
-    {
-      name: "Diego Ferrer",
-      credentials:
-        "Launched and sold two online course businesses with 30,000+ students. Covers courses, community, and business security.",
+      name: "Cristian Fazio",
+      credentials: "Founder of Verdict — writing honest reviews of tools for creators and small teams.",
     },
   ],
   es: [
     {
-      name: "Marina Ibáñez",
-      credentials:
-        "8 años evaluando software para creadores · ex-growth lead en 2 startups SaaS. Cubre email y automatización.",
-    },
-    {
-      name: "Diego Ferrer",
-      credentials:
-        "Lanzó y vendió dos negocios de formación online con más de 30.000 alumnos. Cubre cursos, comunidad y seguridad empresarial.",
+      name: "Cristian Fazio",
+      credentials: "Fundador de Verdict — escribe reseñas honestas de herramientas para creadores y equipos pequeños.",
     },
   ],
 } as const;
