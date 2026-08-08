@@ -68,7 +68,7 @@ export default async function HomePage({
           </p>
           <a
             href="#scores"
-            className="inline-flex shrink-0 items-center gap-3 rounded-md border border-panel-line bg-panel px-6 py-4 text-sm font-medium text-panel-ink transition-all duration-150 hover:-translate-y-0.5 hover:border-signal hover:bg-signal hover:text-on-signal"
+            className="inline-flex shrink-0 items-center gap-3 rounded-md border border-panel-line bg-panel px-6 py-4 text-sm font-medium text-panel-ink transition-all duration-200 hover:-translate-y-1 hover:border-signal hover:bg-signal hover:text-on-signal"
           >
             {t("cta")}
           </a>

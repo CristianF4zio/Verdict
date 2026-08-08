@@ -123,7 +123,7 @@ export default async function CategoryPage({
               className={
                 activeType === filter.type
                   ? "border-b-2 border-signal pb-1 text-panel-ink"
-                  : "text-panel-body transition-colors duration-150 hover:text-panel-ink"
+                  : "text-panel-body transition-colors duration-200 hover:text-panel-ink"
               }
             >
               {filter.label}

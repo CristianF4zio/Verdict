@@ -34,7 +34,7 @@ export function CtaButton({
         href={trackedHref}
         rel="sponsored nofollow noopener"
         target="_blank"
-        className={`block rounded-md px-5 py-3.5 text-center text-sm font-medium transition-all duration-150 hover:-translate-y-0.5 ${styles[variant]} ${fullWidth ? "w-full" : ""}`}
+        className={`block rounded-md px-5 py-3.5 text-center text-sm font-medium transition-all duration-200 hover:-translate-y-1 ${styles[variant]} ${fullWidth ? "w-full" : ""}`}
       >
         {label}
       </a>

@@ -26,7 +26,7 @@ export function Header({ locale }: { locale: Locale }) {
             <Link
               key={category.slug}
               href={`/${category.slug}`}
-              className="underline-grow text-body transition-colors duration-150 hover:text-ink"
+              className="underline-grow text-body transition-colors duration-200 hover:text-ink"
             >
               {category[locale]}
             </Link>

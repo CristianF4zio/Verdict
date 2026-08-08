@@ -71,38 +71,23 @@ details[open] .faq-bar {
 }
 
 .row {
-  transition:
-    background 0.12s,
-    color 0.12s;
+  transition: background 0.22s;
 }
 .row:hover {
-  background: var(--panel);
-  color: var(--panel-ink);
-}
-.row:hover .row-soft,
-.row:hover .row-title {
-  color: var(--panel-ink);
+  background: var(--panel-line);
 }
 .row:hover .row-score {
   color: var(--signal);
 }
 
-/* Same row-hover language, inverted for rows already sitting on a dark
-   (panel) surface — flips to the light paper color instead of trying to
-   go darker than the panel itself. */
+/* Same row-hover language, for rows already sitting on the panel surface —
+   lightens to --panel-line instead of trying to flip to --paper, which is
+   the same value as --panel now that the site only has one (dark) theme. */
 .row-invert {
-  transition:
-    background 0.12s,
-    color 0.12s;
+  transition: background 0.22s;
 }
 .row-invert:hover {
-  background: var(--paper);
-  color: var(--ink);
-}
-.row-invert:hover .row-soft,
-.row-invert:hover .row-title,
-.row-invert:hover .row-score {
-  color: var(--ink);
+  background: var(--panel-line);
 }
 
 .underline-grow {
@@ -114,11 +99,11 @@ details[open] .faq-bar {
   left: 0;
   bottom: -2px;
   width: 100%;
-  height: 1px;
+  height: 1.5px;
   background: currentColor;
   transform: scaleX(0);
   transform-origin: right;
-  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .underline-grow:hover::after {
   transform: scaleX(1);
@@ -126,26 +111,26 @@ details[open] .faq-bar {
 }
 
 .lift {
-  transition: transform 0.15s;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .lift:hover {
-  transform: translateY(-3px);
+  transform: translateY(-6px);
 }
 
 /* 3D tilt hover — adapted from a Uiverse.io "3D Hover" card effect.
    Needs a `perspective` ancestor (see the teaser grid) to read as 3D. */
 .tilt-3d {
   transform-style: preserve-3d;
-  transition: transform 0.5s;
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .tilt-3d:hover {
-  transform: translateZ(10px) rotateX(20deg) rotateY(20deg);
+  transform: translateZ(18px) rotateX(22deg) rotateY(22deg);
 }
 .tilt-3d-pop {
-  transition: transform 0.5s;
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .tilt-3d:hover .tilt-3d-pop {
-  transform: translateZ(50px);
+  transform: translateZ(65px);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -167,8 +152,8 @@ details[open] .faq-bar {
 .reveal-arrow {
   display: inline-block;
   opacity: 0;
-  transform: translateX(-4px);
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateX(-10px);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .group:hover .reveal-arrow {
   opacity: 1;
@@ -179,7 +164,7 @@ details[open] .faq-bar {
 @keyframes verdict-fade-up {
   from {
     opacity: 0;
-    transform: translateY(14px);
+    transform: translateY(26px);
   }
   to {
     opacity: 1;
@@ -188,7 +173,7 @@ details[open] .faq-bar {
 }
 
 .animate-fade-up {
-  animation: verdict-fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation: verdict-fade-up 0.85s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 @media (prefers-reduced-motion: reduce) {

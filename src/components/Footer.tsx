@@ -28,10 +28,10 @@ export async function Footer({ locale }: { locale: Locale }) {
           </div>
           <a
             href="#"
-            className="group flex items-center gap-2 font-mono text-[11.5px] uppercase tracking-wider transition-colors duration-150 hover:text-signal"
+            className="group flex items-center gap-2 font-mono text-[11.5px] uppercase tracking-wider transition-colors duration-200 hover:text-signal"
           >
             {t("backToTop")}
-            <span className="transition-transform duration-150 group-hover:-translate-y-0.5">
+            <span className="transition-transform duration-200 group-hover:-translate-y-1">
               ↑
             </span>
           </a>
@@ -46,7 +46,7 @@ export async function Footer({ locale }: { locale: Locale }) {
               <Link
                 key={category.slug}
                 href={`/${category.slug}`}
-                className="underline-grow w-fit transition-colors duration-150 hover:text-panel-ink"
+                className="underline-grow w-fit transition-colors duration-200 hover:text-panel-ink"
               >
                 {category[locale]}
               </Link>
@@ -58,19 +58,19 @@ export async function Footer({ locale }: { locale: Locale }) {
             </span>
             <Link
               href="/about"
-              className="underline-grow w-fit transition-colors duration-150 hover:text-panel-ink"
+              className="underline-grow w-fit transition-colors duration-200 hover:text-panel-ink"
             >
               {t("methodology")}
             </Link>
             <Link
               href="/affiliate-disclosure"
-              className="underline-grow w-fit transition-colors duration-150 hover:text-panel-ink"
+              className="underline-grow w-fit transition-colors duration-200 hover:text-panel-ink"
             >
               {t("howWeFund")}
             </Link>
             <Link
               href="/about"
-              className="underline-grow w-fit transition-colors duration-150 hover:text-panel-ink"
+              className="underline-grow w-fit transition-colors duration-200 hover:text-panel-ink"
             >
               {t("team")}
             </Link>
@@ -81,19 +81,19 @@ export async function Footer({ locale }: { locale: Locale }) {
             </span>
             <Link
               href="/privacy-policy"
-              className="underline-grow w-fit transition-colors duration-150 hover:text-panel-ink"
+              className="underline-grow w-fit transition-colors duration-200 hover:text-panel-ink"
             >
               {t("privacy")}
             </Link>
             <Link
               href="/terms"
-              className="underline-grow w-fit transition-colors duration-150 hover:text-panel-ink"
+              className="underline-grow w-fit transition-colors duration-200 hover:text-panel-ink"
             >
               {t("terms")}
             </Link>
             <Link
               href="/affiliate-disclosure"
-              className="underline-grow w-fit transition-colors duration-150 hover:text-panel-ink"
+              className="underline-grow w-fit transition-colors duration-200 hover:text-panel-ink"
             >
               {t("affiliate")}
             </Link>
@@ -112,7 +112,7 @@ export async function Footer({ locale }: { locale: Locale }) {
                   key={l}
                   href="/"
                   locale={l}
-                  className="underline-grow w-fit transition-colors duration-150 hover:text-panel-ink"
+                  className="underline-grow w-fit transition-colors duration-200 hover:text-panel-ink"
                 >
                   {localeNames[l]}
                 </Link>

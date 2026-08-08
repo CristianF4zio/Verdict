@@ -18,7 +18,7 @@ export function LocaleSwitcher({ locale }: { locale: Locale }) {
             <Link
               href={pathname}
               locale={l}
-              className="transition-colors duration-150 hover:text-ink"
+              className="transition-colors duration-200 hover:text-ink"
             >
               {l.toUpperCase()}
             </Link>
