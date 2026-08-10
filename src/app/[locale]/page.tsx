@@ -67,36 +67,38 @@ export default async function HomePage({
         </p>
       </section>
 
-      <section id="scores" className="scroll-mt-6 bg-panel text-panel-ink">
-        <div className="mx-auto max-w-[1280px] px-7 py-10">
-          <div className="mb-2 font-mono text-[11px] uppercase tracking-wider text-panel-body">
-            {t("rankingLabel")}
-          </div>
-          {topProducts.map((product, i) => (
-            <div
-              key={product.name}
-              className="animate-fade-up"
-              style={{ animationDelay: `${Math.min(i, 6) * 60}ms` }}
-            >
-              <TopProductRow
-                href={product.href}
-                score={product.rating}
-                name={product.name}
-                categoryLabel={nav(
-                  categoryKeys[
-                    product.category as keyof typeof categoryKeys
-                  ],
-                )}
-                price={product.price}
-                angle={product.blurb}
-                showDivider={i < topProducts.length - 1}
-              />
+      {topProducts.length > 0 && (
+        <section id="scores" className="scroll-mt-6 bg-panel text-panel-ink">
+          <div className="mx-auto max-w-[1280px] px-7 py-10">
+            <div className="mb-2 font-mono text-[11px] uppercase tracking-wider text-panel-body">
+              {t("rankingLabel")}
             </div>
-          ))}
-        </div>
-      </section>
+            {topProducts.map((product, i) => (
+              <div
+                key={product.name}
+                className="animate-fade-up"
+                style={{ animationDelay: `${Math.min(i, 6) * 60}ms` }}
+              >
+                <TopProductRow
+                  href={product.href}
+                  score={product.rating}
+                  name={product.name}
+                  categoryLabel={nav(
+                    categoryKeys[
+                      product.category as keyof typeof categoryKeys
+                    ],
+                  )}
+                  price={product.price}
+                  angle={product.blurb}
+                  showDivider={i < topProducts.length - 1}
+                />
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
-      <section className="mx-auto max-w-[1280px] px-7 py-16">
+      <section className="mx-auto max-w-[1280px] px-7 py-12">
         <div className="grid grid-cols-1 gap-5 [perspective:900px] md:grid-cols-3">
           {comparisonDoc && (
             <div className="animate-fade-up h-full">
@@ -162,7 +164,7 @@ export default async function HomePage({
       </section>
 
       <section className="bg-panel text-panel-ink">
-        <div className="mx-auto max-w-[1280px] px-7 py-16">
+        <div className="mx-auto max-w-[1280px] px-7 py-12">
           <p className="m-0 max-w-[36ch] font-serif text-[30px] italic leading-[1.2] tracking-[-0.01em] md:text-[36px]">
             {t("quote")}
           </p>
