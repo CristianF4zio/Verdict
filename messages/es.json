@@ -4,7 +4,8 @@
     "emailMarketing": "Email Marketing",
     "coursePlatforms": "Plataformas de Cursos",
     "automationTools": "Automatización",
-    "businessSecurity": "Seguridad Empresarial"
+    "businessSecurity": "Seguridad Empresarial",
+    "allTools": "Todas las herramientas"
   },
   "footer": {
     "backToTop": "Volver arriba",
@@ -98,6 +99,15 @@
     "quoteBody": "Algunos enlaces son de afiliado: si contratas a través de ellos recibimos una comisión sin coste para ti. No cambian el orden ni la puntuación, y cuando una marca no tiene programa el enlace sigue estando.",
     "policyLink": "Política editorial",
     "team": "Quién escribe"
+  },
+  "allTools": {
+    "kicker": "Todas las herramientas · {count}",
+    "titleLead": "Cada herramienta",
+    "titleHighlight": "que ya probamos de verdad.",
+    "subtitle": "Todos los productos de Verdict con un puntaje real y verificado, ordenados de mayor a menor. Ninguna marca paga por aparecer acá.",
+    "disclaimer": "¿No sabes cuál elegir? Antes de decidir, te recomendamos leer nuestras reviews y comparativas completas — ahí evaluamos cada herramienta a fondo.",
+    "disclaimerLink": "Ver todas las reviews y comparativas →",
+    "empty": "Todavía ninguna herramienta tiene un puntaje real y probado — cada review en curso sigue mostrando un placeholder. Vuelve a pasar cuando publiquemos las primeras."
   },
   "notFound": {
     "kicker": "404",

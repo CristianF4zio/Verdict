@@ -4,7 +4,8 @@
     "emailMarketing": "Email Marketing",
     "coursePlatforms": "Course Platforms",
     "automationTools": "Automation Tools",
-    "businessSecurity": "Business Security"
+    "businessSecurity": "Business Security",
+    "allTools": "All Tools"
   },
   "footer": {
     "backToTop": "Back to top",
@@ -98,6 +99,15 @@
     "quoteBody": "Some links are affiliate links: if you sign up through them we get a commission at no cost to you. They never change the ranking or the score, and when a brand has no program, the link stays anyway.",
     "policyLink": "Editorial policy",
     "team": "Who writes"
+  },
+  "allTools": {
+    "kicker": "All tools · {count}",
+    "titleLead": "Every tool",
+    "titleHighlight": "we've actually tested.",
+    "subtitle": "Every product on Verdict with a real, verified score — ranked highest first. No brand pays to appear here.",
+    "disclaimer": "Not sure which one to pick? Before deciding, read the full reviews and comparisons — that's where we put each tool through its paces.",
+    "disclaimerLink": "See all reviews and comparisons →",
+    "empty": "No tool has a real, tested score yet — every review in progress still shows a placeholder. Check back once the first ones are published."
   },
   "notFound": {
     "kicker": "404",

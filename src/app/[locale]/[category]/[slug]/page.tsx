@@ -138,7 +138,7 @@ async function ReviewTemplate({ doc, url }: { doc: ContentDoc; url: string }) {
             <div className="mb-6 font-mono text-[11px] uppercase tracking-wider text-muted">
               {getTypeLabel("review", locale)} · {nav(categoryKeys[doc.category])} · {dateFormatter.format(new Date(doc.updatedAt))}
             </div>
-            <h1 className="mb-6 max-w-[18ch] text-[44px] font-medium leading-[0.95] tracking-[-0.05em] md:text-[68px]">
+            <h1 className="mb-6 max-w-[18ch] font-serif text-[44px] font-medium leading-[0.95] tracking-[-0.05em] md:text-[68px]">
               {product?.name && (() => {
                 const { lead, highlight } = splitHighlight(product.name);
                 return (
@@ -234,13 +234,13 @@ async function ReviewTemplate({ doc, url }: { doc: ContentDoc; url: string }) {
             </div>
           )}
 
-          <div className="prose mb-12 max-w-[62ch] text-[18px] leading-[1.65] text-ink prose-headings:font-medium prose-headings:tracking-[-0.04em] prose-headings:text-ink prose-p:text-body prose-a:text-ink prose-a:underline prose-strong:text-ink prose-li:text-body">
+          <div className="prose mb-12 max-w-[62ch] text-[18px] leading-[1.65] text-ink prose-headings:font-medium prose-headings:tracking-[-0.04em] prose-headings:text-ink prose-h2:font-serif prose-p:text-body prose-a:text-ink prose-a:underline prose-strong:text-ink prose-li:text-body">
             <MdxContent code={doc.body} />
           </div>
 
           {doc.faqs.length > 0 && (
             <>
-              <h2 className="mb-6 text-[28px] font-medium tracking-[-0.04em] md:text-[34px]">
+              <h2 className="mb-6 font-serif text-[28px] font-medium tracking-[-0.04em] md:text-[34px]">
                 {t("faqTitle")}
               </h2>
               <FaqList faqs={doc.faqs} />
@@ -323,7 +323,7 @@ async function ComparisonTemplate({
         <div className="mb-6 font-mono text-[11px] uppercase tracking-wider text-muted">
           {getTypeLabel("comparison", locale)} · {doc.products.length} {locale === "es" ? "productos" : "products"}
         </div>
-        <h1 className="mb-6 max-w-[20ch] text-[36px] font-medium leading-[0.94] tracking-[-0.05em] md:text-[72px]">
+        <h1 className="mb-6 max-w-[20ch] font-serif text-[36px] font-medium leading-[0.94] tracking-[-0.05em] md:text-[72px]">
           {(() => {
             const { lead, highlight } = splitHighlight(
               doc.products.map((p) => p.name).join(" vs "),
@@ -415,7 +415,7 @@ async function ComparisonTemplate({
 
       {doc.faqs.length > 0 && (
         <section className="mx-auto max-w-[1280px] px-7 pb-16">
-          <h2 className="mb-4 text-[28px] font-medium tracking-[-0.04em] md:text-[34px]">
+          <h2 className="mb-4 font-serif text-[28px] font-medium tracking-[-0.04em] md:text-[34px]">
             {t("faqTitle")}
           </h2>
           <FaqList faqs={doc.faqs} />
@@ -442,10 +442,12 @@ async function RoundupTemplate({
     <>
       <section className="animate-fade-up mx-auto max-w-[1280px] px-7 pb-10 pt-14">
         <div className="mb-6 font-mono text-[11px] uppercase tracking-wider text-muted">
-          {getTypeLabel("roundup", locale)} · {doc.products.length}{" "}
-          {locale === "es" ? "herramientas probadas" : "tools tested"}
+          {getTypeLabel("roundup", locale)} ·{" "}
+          {doc.products.every((p) => p.rating > 0)
+            ? `${doc.products.length} ${locale === "es" ? "herramientas probadas" : "tools tested"}`
+            : `${doc.products.length} ${locale === "es" ? "herramientas comparadas" : "tools compared"}`}
         </div>
-        <h1 className="mb-6 max-w-[16ch] text-[36px] font-medium leading-[0.94] tracking-[-0.05em] md:text-[76px]">
+        <h1 className="mb-6 max-w-[16ch] font-serif text-[36px] font-medium leading-[0.94] tracking-[-0.05em] md:text-[76px]">
           {(() => {
             const { lead, highlight } = splitHighlight(
               doc.title,
@@ -476,7 +478,7 @@ async function RoundupTemplate({
 
       {doc.faqs.length > 0 && (
         <section className="mx-auto max-w-[1280px] px-7 pb-16">
-          <h2 className="mb-4 text-[28px] font-medium tracking-[-0.04em] md:text-[34px]">
+          <h2 className="mb-4 font-serif text-[28px] font-medium tracking-[-0.04em] md:text-[34px]">
             {t("faqTitle")}
           </h2>
           <FaqList faqs={doc.faqs} />
