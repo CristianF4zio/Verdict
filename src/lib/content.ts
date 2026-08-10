@@ -95,16 +95,20 @@ export type TopProduct = {
   rating: number;
   price: string;
   blurb?: string;
+  affiliateLink: string;
   category: string;
   href: string;
 };
 
 // Aggregates products across every doc, deduped by name (case-insensitive),
 // preferring the dedicated review page as the link target when one exists.
+// A product with no blurb of its own (e.g. a review's single product) falls
+// back to that review's description as a short summary.
 export function getTopProducts(locale: Locale, limit: number): TopProduct[] {
   const byName = new Map<string, TopProduct>();
 
   for (const doc of getAllContent(locale)) {
+    const fallbackBlurb = doc.type === "review" ? doc.description : undefined;
     for (const product of doc.products) {
       const key = product.name.toLowerCase();
       const existing = byName.get(key);
@@ -113,14 +117,15 @@ export function getTopProducts(locale: Locale, limit: number): TopProduct[] {
           name: product.name,
           rating: product.rating,
           price: product.price,
-          blurb: product.blurb,
+          blurb: product.blurb ?? fallbackBlurb,
+          affiliateLink: product.affiliateLink,
           category: doc.category,
           href: `/${doc.category}/${doc.slug}`,
         });
       } else {
         byName.set(key, {
           ...existing,
-          blurb: existing.blurb ?? product.blurb,
+          blurb: existing.blurb ?? product.blurb ?? fallbackBlurb,
           href:
             doc.type === "review"
               ? `/${doc.category}/${doc.slug}`

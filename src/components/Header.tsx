@@ -10,6 +10,8 @@ const categories = [
   { slug: "business-security", en: "Security", es: "Seguridad" },
 ] as const;
 
+const allTools = { slug: "all-tools", en: "All Tools", es: "Todas las herramientas" } as const;
+
 export function Header({ locale }: { locale: Locale }) {
   return (
     <header className="border-b border-panel-line">
@@ -31,6 +33,12 @@ export function Header({ locale }: { locale: Locale }) {
               {category[locale]}
             </Link>
           ))}
+          <Link
+            href={`/${allTools.slug}`}
+            className="underline-grow text-body transition-colors duration-200 hover:text-ink"
+          >
+            {allTools[locale]}
+          </Link>
         </nav>
         <div className="ml-auto flex items-center font-mono uppercase tracking-wider text-muted">
           <LocaleSwitcher locale={locale} />
