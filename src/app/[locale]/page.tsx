@@ -53,7 +53,7 @@ export default async function HomePage({
 
   return (
     <div>
-      <section className="mx-auto max-w-[1280px] px-7 pb-14 pt-20">
+      <section className="mx-auto max-w-[1280px] px-7 pb-14 pt-10 md:pt-20">
         <h1
           className="animate-fade-up max-w-[16ch] text-[40px] font-medium leading-[0.96] tracking-[-0.05em] md:text-[80px] md:leading-[0.94]"
         >
@@ -170,7 +170,7 @@ export default async function HomePage({
           </p>
           <Link
             href="/about"
-            className="mt-6 inline-block border-b border-signal pb-0.5 font-mono text-[11.5px] uppercase tracking-wider text-signal"
+            className="underline-grow mt-6 inline-block font-mono text-[11.5px] uppercase tracking-wider text-signal"
           >
             {t("quoteLink")}
           </Link>

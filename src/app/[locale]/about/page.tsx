@@ -122,7 +122,7 @@ export default async function AboutPage({
             </p>
             <Link
               href="/affiliate-disclosure"
-              className="border-b border-signal pb-0.5 font-mono text-[11.5px] uppercase tracking-wider text-signal"
+              className="underline-grow font-mono text-[11.5px] uppercase tracking-wider text-signal"
             >
               {t("policyLink")}
             </Link>
